@@ -89,3 +89,4 @@ ml_model.fit(X_train, train_labels)
 
 ml_preds = ml_model.predict(X_test)
 print(f"Machine Learning Accuracy: {accuracy_score(true_test_labels, ml_preds) * 100:.1f}%")
+

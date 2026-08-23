@@ -1,6 +1,6 @@
 # 🚀 Introduction to Modern AI
 
-A complete, practical, hands-on curriculum designed for curious self-learners.
+A complete, practical, hands-on curriculum designed for curious self-learners. Learn the core mental models and code everything from scratch—no black boxes.
 
 ---
 
@@ -14,4 +14,9 @@ A complete, practical, hands-on curriculum designed for curious self-learners.
 | **04** | Language & Embeddings | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaraKimsLabs/introduction-to-modern-ai/blob/main/notebooks/module_04.ipynb) |
 | **05** | The Transformer & GenAI | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaraKimsLabs/introduction-to-modern-ai/blob/main/notebooks/module_05.ipynb) |
 | **06** | RAG & Practical AI Systems | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaraKimsLabs/introduction-to-modern-ai/blob/main/notebooks/module_06.ipynb) |
-| **07** | Ethics, Limits & Next Frontiers | *Coming Soon* |
+| **07** | Ethics, Limits & Next Frontiers | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaraKimsLabs/introduction-to-modern-ai/blob/main/notebooks/module_07.ipynb) |
+
+---
+
+## 📜 License
+MIT License - free to use, fork, and share.

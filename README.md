@@ -13,5 +13,5 @@ A complete, practical, hands-on curriculum designed for curious self-learners.
 | **03** | Neural Networks & Deep Learning | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaraKimsLabs/introduction-to-modern-ai/blob/main/notebooks/module_03.ipynb) |
 | **04** | Language & Embeddings | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaraKimsLabs/introduction-to-modern-ai/blob/main/notebooks/module_04.ipynb) |
 | **05** | The Transformer & GenAI | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaraKimsLabs/introduction-to-modern-ai/blob/main/notebooks/module_05.ipynb) |
-| **06** | RAG & Practical AI Systems | *Coming Soon* |
+| **06** | RAG & Practical AI Systems | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/SaraKimsLabs/introduction-to-modern-ai/blob/main/notebooks/module_06.ipynb) |
 | **07** | Ethics, Limits & Next Frontiers | *Coming Soon* |

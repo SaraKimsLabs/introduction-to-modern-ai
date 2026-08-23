@@ -15,16 +15,22 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install Pandoc & LaTeX Engine
+      - name: Set up Python & Install WeasyPrint
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Pandoc and PDF Engine
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
+          sudo apt-get install -y pandoc libpango-1.0-0 libharfbuzz0b libpangoft2-1.0-0
+          pip install weasyprint
 
       - name: Build PDF and ePub
         run: |
           mkdir -p output
-          pandoc book.md -o output/Introduction-to-Modern-AI.pdf --pdf-engine=pdflatex
-          pandoc book.md -o output/Introduction-to-Modern-AI.epub
+          pandoc book.md -o output/Introduction-to-Modern-AI.epub --metadata title="Introduction to Modern AI"
+          pandoc book.md -o output/Introduction-to-Modern-AI.pdf --pdf-engine=weasyprint --metadata title="Introduction to Modern AI"
 
       - name: Upload Artifacts
         uses: actions/upload-artifact@v4

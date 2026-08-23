@@ -1,0 +1,33 @@
+name: Generate PDF and eBook
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install Pandoc & LaTeX Engine
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-latex-base texlive-fonts-recommended texlive-extra-utils texlive-latex-extra
+
+      - name: Build PDF and ePub
+        run: |
+          mkdir -p output
+          pandoc book.md -o output/Introduction-to-Modern-AI.pdf --pdf-engine=pdflatex
+          pandoc book.md -o output/Introduction-to-Modern-AI.epub
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: modern-ai-ebooks
+          path: output/
